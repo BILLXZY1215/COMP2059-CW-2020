@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TilePane fx:id="Sokoban" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #fff; -fx-background-image: url('img/background.gif');" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.Controller.GameStartController">
+   <children>
+      <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="5.0" text="Sokoban" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="Wawati SC Regular" size="75.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#673beb" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+         <TilePane.margin>
+            <Insets />
+         </TilePane.margin>
+      </Text>
+      <Button fx:id="btn_1" defaultButton="true" mnemonicParsing="false" onAction="#start" prefHeight="45.0" prefWidth="200.0" text="Start Game" textAlignment="CENTER">
+         <font>
+            <Font name="Songti SC Black" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_2" mnemonicParsing="false" onAction="#load" prefHeight="45.0" prefWidth="200.0" text="Load Game" textAlignment="CENTER">
+         <font>
+            <Font name="Songti SC Black" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_3" mnemonicParsing="false" onAction="#rank" prefHeight="45.0" prefWidth="200.0" text="Ranking" textAlignment="CENTER">
+         <font>
+            <Font name="Songti SC Black" size="20.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Created by Zeyu XIONG 2020" textAlignment="CENTER" wrappingWidth="600.0" style="color: #fff">
+         <font>
+            <Font name="Wawati SC Regular" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</TilePane>

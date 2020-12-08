@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="Ranking" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-image: url('img/background.gif');" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.Controller.RankingController">
+   <children>
+      <Button fx:id="confirm" layoutX="210.0" layoutY="504.0" mnemonicParsing="false" onAction="#confirm" prefHeight="49.0" prefWidth="181.0" text="Confirm">
+         <font>
+            <Font name="Songti SC Black" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="144.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="3.0" text="Ranking" textAlignment="CENTER" wrappingWidth="312.1162109375">
+         <font>
+            <Font name="Wawati SC Regular" size="50.0" />
+         </font>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#9a6464" />
+                  <Stop color="#673beb" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Text>
+      <VBox fx:id="five" layoutX="70.0" layoutY="376.0" prefHeight="60.0" prefWidth="461.0" style="-fx-background-color: green;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Top5" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="rank5" strokeType="OUTSIDE" strokeWidth="0.0"  textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="15.0" />
+               </font>
+            </Text>
+         </children></VBox>
+      <VBox fx:id="four" layoutX="70.0" layoutY="316.0" prefHeight="60.0" prefWidth="461.0" style="-fx-background-color: purple;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Top4" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="rank4" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="15.0" />
+               </font>
+            </Text>
+         </children></VBox>
+      <VBox fx:id="three" layoutX="70.0" layoutY="256.0" prefHeight="60.0" prefWidth="461.0" style="-fx-background-color: brown;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Top3" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="rank3" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="15.0" />
+               </font>
+            </Text>
+         </children></VBox>
+      <VBox fx:id="two" layoutX="70.0" layoutY="196.0" prefHeight="60.0" prefWidth="461.0" style="-fx-background-color: silver;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Top2" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="rank2" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="15.0" />
+               </font>
+            </Text>
+         </children></VBox>
+      <VBox fx:id="one" layoutX="70.0" layoutY="137.0" prefHeight="60.0" prefWidth="461.0" style="-fx-background-color: gold;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Top1" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="rank1" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="460.0">
+               <font>
+                  <Font name="Wawati SC Regular" size="15.0" />
+               </font>
+            </Text>
+         </children></VBox>
+   </children>
+</Pane>

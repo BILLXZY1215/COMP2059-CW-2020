@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<MenuBar fx:id="Menu" prefHeight="30.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.Controller.MenuController">
+  <menus>
+    <Menu fx:id="file" mnemonicParsing="false" text="File">
+      <items>
+        <MenuItem fx:id="SaveGame" mnemonicParsing="false" onAction="#SaveGame" text="Save Game" />
+        <MenuItem fx:id="LoadGame" mnemonicParsing="false" onAction="#LoadGame" text="Load Game" />
+        <MenuItem fx:id="Exit" mnemonicParsing="false" onAction="#Exit" text="Exit" />
+      </items>
+    </Menu>
+    <Menu fx:id="level" mnemonicParsing="false" text="Level">
+      <items>
+        <MenuItem fx:id="Undo" mnemonicParsing="false" onAction="#Undo" text="Undo" />
+        <RadioMenuItem fx:id="Music" mnemonicParsing="false" onAction="#Music" text="Toggle Music" />
+        <RadioMenuItem fx:id="Debug" mnemonicParsing="false" onAction="#Debug" text="Toggle Debug" />
+        <MenuItem fx:id="ResetLevel" mnemonicParsing="false" onAction="#Reset" text="Reset Level" />
+      </items>
+    </Menu>
+    <Menu fx:id="AboutMenu" mnemonicParsing="false" text="About">
+      <items>
+        <MenuItem fx:id="About" mnemonicParsing="false" onAction="#About" text="About This Game" />
+      </items>
+    </Menu>
+      <Menu fx:id="modes" mnemonicParsing="false" text="Mode">
+         <items>
+            <MenuItem fx:id="Plant" mnemonicParsing="false" onAction="#Plant" text="Plant" />
+            <MenuItem fx:id="Zombie" mnemonicParsing="false" onAction="#Zombie" text="Zombie" />
+         </items>
+      </Menu>
+    <Menu mnemonicParsing="false">
+      <graphic>
+        <Pane prefHeight="20.0" prefWidth="100.0">
+          <children>
+            <Text fx:id="levelText" layoutX="12.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+              <font>
+                <Font name="Wawati SC Regular" size="15.0" />
+              </font>
+            </Text>
+          </children>
+        </Pane>
+      </graphic>
+    </Menu>
+    <Menu mnemonicParsing="false">
+      <graphic>
+        <Pane prefHeight="20.0" prefWidth="100.0">
+          <children>
+            <Text fx:id="stepText" layoutX="12.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+              <font>
+                <Font name="Wawati SC Regular" size="15.0" />
+              </font>
+            </Text>
+          </children>
+        </Pane>
+      </graphic>
+    </Menu>
+    <Menu mnemonicParsing="false">
+      <graphic>
+        <Pane prefHeight="20.0" prefWidth="100.0">
+          <children>
+            <Text fx:id="powerText" layoutX="12.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+              <font>
+                <Font name="Wawati SC Regular" size="15.0" />
+              </font>
+            </Text>
+          </children>
+        </Pane>
+      </graphic>
+    </Menu>
+  </menus>
+</MenuBar>
